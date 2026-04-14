@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: myapp
-  replicas: 10
+  replicas: 50
   template:
     metadata:
       labels:
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: nginx:alpine3.23-perl
+        image: nginx:ubuntu
         ports:
         - containerPort: 8080
